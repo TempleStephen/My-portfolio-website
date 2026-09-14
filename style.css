@@ -343,13 +343,14 @@ main {
     );
     border: 1px solid var(--border);
 }
-
 .profile-frame img {
     position: relative;
     z-index: 1;
     width: min(300px, 78%);
+    aspect-ratio: 1 / 1;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
     filter: drop-shadow(0 22px 34px rgba(0,0,0,0.45));
     transition: transform 0.3s ease;
 }
